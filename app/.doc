@@ -1,0 +1,14 @@
+Run $flask run
+
+1) Database must have 'properties' named table
+
+2) Database must have 5 columns
+-city
+-area
+-bed
+-bath
+-garage
+-price
+
+3) Api Url must be follow 
+/predict?city=nabadwip&area=2400&bed=2&bath=1&garage=1
