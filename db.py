@@ -13,12 +13,13 @@ db = mysql.connector.connect(
 )
 
 #define cursor
-cur = db.cursor()
+cur = db.cursor(buffered=True)
 
 def getHouseListByCityName(city):
     sql = "select area,bed,bath,garage,price from properties where city= %s ORDER BY RAND() LIMIT 100"
     cityName = (city,)
     cur.execute(sql,cityName)
     houseList = cur.fetchall()
+    db.commit()
     return houseList
 
