@@ -7,7 +7,7 @@ mysqlclient
 pandas
 PyMySQL
 python-dotenv
-sklearn
+scikit-learn
 uvicorn
 
 
