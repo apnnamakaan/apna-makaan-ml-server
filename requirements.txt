@@ -1,14 +1,11 @@
-executing
-Flask
+flask
 gunicorn
-mysql
-mysql-connector-python
-mysqlclient
-pandas
-PyMySQL
-python-dotenv
-scikit-learn
-uvicorn
 waitress
+mysql-connector-python
+python-dotenv
+pandas
+scikit-learn
+
+
 
 

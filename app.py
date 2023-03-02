@@ -2,7 +2,7 @@ from flask import Flask, request
 from waitress import serve
 import ml
 
-app=Flask(__name__)
+app = Flask(__name__)
 
 @app.route('/')
 def home():
@@ -18,5 +18,3 @@ def predic():
 
     return {"estimate" : ml.predict(city,area,bed,bath,garage)}
 
-if __name__ == "__main__":
-    serve(app, host="0.0.0.0", port=8082)
