@@ -9,5 +9,6 @@ PyMySQL
 python-dotenv
 scikit-learn
 uvicorn
+waitress
 
 

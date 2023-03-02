@@ -1,4 +1,5 @@
 from flask import Flask, request
+from waitress import serve
 import ml
 
 app=Flask(__name__)
@@ -18,5 +19,4 @@ def predic():
     return {"estimate" : ml.predict(city,area,bed,bath,garage)}
 
 if __name__ == "__main__":
-    from waitress import serve
     serve(app, host="0.0.0.0", port=8082)
