@@ -5,6 +5,6 @@ itsdangerous
 Jinja2
 MarkupSafe
 Werkzeug
-flask_mysqldb
 pandas
 scikit-learn
+mysql-connector-python
